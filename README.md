@@ -1,3 +1,52 @@
+##Análisis realizado:
+
+* ¿Qué dependencias están usando?
+
+- Dependencies
+
+1. [es6-promise](https://www.npmjs.com/package/es6-promise) -> Polyfill de ES6 Promise.
+2. [Needle](https://www.npmjs.com/package/needle) -> Cliente HTTP
+3. [object-asign](https://www.npmjs.com/package/object-assign) -> "Assigns enumerable own properties of source objects to the target object and returns the target object. Additional source objects will overwrite previous ones".
+
+- DevDependencies
+
+0. Los necesarios para las pruebas de unidad y TDD, que se analizan más adelante.
+1. [q](https://www.npmjs.com/package/q) -> Permite devolver promesas cuando una función no puede devolver un valor o throw Error.
+
+
+* ¿Cuál es el archivo principal?
+
+El archivo principal es main.js, pues contiene a "Trello en local", con todas las peticiones que se pueden hacer a la api de trello y la conexión al mismo.
+
+* ¿Están usando Common JS o ESM?
+
+Se está usando la sitáxis de CommonJS para importar componentes.
+
+* ¿Qué framework de pruebas están usando?
+
+Se está usando [Mocha](https://mochajs.org/) junto con la librería de aserción [Chai](https://www.chaijs.com/).
+Se está usando también [sinon](https://www.npmjs.com/package/sinon) y [sinon-chai](https://www.npmjs.com/package/sinon-chai) para apoyar con aserciones en el teting (como expect().toBe() en jest). 
+
+* ¿Cómo están diseñadas las pruebas?
+
+Sobre el diseño de las pruebas se puede ver que prácticamente se está realizando un grupo de pruebas por cada método para usar una funcionalidad de trello.
+
+![Imgur](https://i.imgur.com/oAogg8L.png)
+
+Si nos metemos a un conjunto de pruebas, como para el método de añadir un board, podremos ver que las pruebas o "tests" se usa sinon-chai para validar los comportamientos (como expect()toBe() en jest).
+
+![Imgur](https://i.imgur.com/apvHPxE.png)
+
+
+---
+
+Aquí termina mi análisis
+
+
+
+
+
+
 [![Build Status](https://travis-ci.org/norberteder/trello.svg?branch=master)](https://travis-ci.org/norberteder/trello)
 
 # trello
