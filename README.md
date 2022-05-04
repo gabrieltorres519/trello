@@ -37,6 +37,8 @@ Si nos metemos a un conjunto de pruebas, como para el método de añadir un boar
 
 ![Imgur](https://i.imgur.com/apvHPxE.png)
 
+![Imgur](https://i.imgur.com/McKnsCr.png)
+
 
 ---
 
